@@ -8,23 +8,6 @@
     <!-- separation of concerns -->
     <link rel="stylesheet" href="style.css">
 <style>
-    button {
-        display: center;
-        background-color: #90dd97;
-        border-radius: 20px;
-        color: #ffffff;
-        text-align: center;
-        font-size: 20px;
-        padding: 10px;
-        margin: 10px;
-        width: 200px;
-        box-shadow: 3px 3px 10px rgb(0, 0, 0);
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.15s;
-        cursor: pointer;
-    }
 </style>
 </head>
 <body>
@@ -34,10 +17,14 @@
             <p id="sign-in">Sign In</p>
             <!-- <label for="username"> Username Field</label>-->
             <input type="text" id="username" class="niceInput" 
-            placeholder="          Username" aria-label="username">
+            placeholder="Username" aria-label="username">
             <input type="password" id="password" class="niceInput"
-            placeholder="          Password" aria-label="password">
+            placeholder="Password" aria-label="password">
             <button>Login</button>
+        <div id="options">
+            <h1 id="forgot">Forgot password?</h1>
+            <h1 id="register">Register</h1>
+        </div>
         </div>
     </div>
 </body>

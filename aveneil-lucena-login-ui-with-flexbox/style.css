@@ -16,15 +16,33 @@ body {
     height: 100%;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgb(46, 46, 255), rgb(0, 128, 111));
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(27, 19, 99));
 }
 
 #sign-in {
     font-family: Arial, 'Times New Roman', Times, serif;
     font-size: 25px;
+    font-weight: bold;
 }
-
-
+#options {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, 'Times New Roman', Times, serif;
+    font-size: 7px;
+    gap: 25px;
+}
+#forgot, #register {
+    display: flex;
+    align-content: space-between;
+    font-weight: bold;
+    cursor: pointer;
+}
+#forgot:hover, #register:hover {
+    color: blue;
+    transition: 0.3 ease-in-out;
+    box-shadow: #98cdff;
+    text-decoration: underline;
+}
 #card {
     display: flex;
     min-width: 300px;
@@ -33,11 +51,11 @@ body {
     min-height: 140px;
     max-height: 300px;
     /* justify-content: center;*/
-    background-color: rgb(142, 210, 236);
-    border-radius: 25px;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(133,134,179,1);
-    -moz-box-shadow: 10px 10px 5px 0px rgb(46, 50, 255);
-    box-shadow: 10px 10px 5px 0px rgb(21, 66, 49);
+    background-color: rgb(83, 167, 236);
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgb(168, 169, 241);
+    -moz-box-shadow: 10px 10px 5px 0px rgb(151, 152, 212);
+    box-shadow: 10px 10px 5px 0px rgb(41, 50, 114);
     align-items: center;
     padding: 1.5em;
 }
@@ -49,7 +67,7 @@ body {
     border-left-color: transparent;
     border-right-color: transparent;
     border-radius: 15px;
-    background-color: rgb(74, 90, 126);
+    background-color: rgb(57, 68, 94);
 }
 
 #password {
@@ -58,7 +76,7 @@ body {
     border-left-color: transparent;
     border-right-color: transparent;
     border-radius: 15px;
-    background-color: rgb(74, 90, 126);
+    background-color: rgb(57, 68, 94);
 }
 
 .niceInput {
@@ -72,4 +90,23 @@ body {
 .niceInput:focus {
     outline: 0em;
     background-color: rgb(101, 127, 165);
+}
+
+button {
+    display: center;
+    background-color: #98cdff;
+    border-radius: 20px;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.15s;
+    cursor: pointer;
 }
